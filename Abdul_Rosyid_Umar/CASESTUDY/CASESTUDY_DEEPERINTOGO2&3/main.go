@@ -47,7 +47,7 @@ func BuatDeck() Deck {
 }
 
 // fungsi yang membagi deck menjadi dua bagian
-func BagiDek(d Deck) (Deck, Deck) {
+func bagiDek(d Deck) (Deck, Deck) {
 	bagi := len(d) / 2
 	return d[:bagi], d[bagi:]
 }
@@ -121,7 +121,7 @@ func main() {
 	fmt.Println("dek diubah jadi string dengan dibatasi koma", dek.Gabungkan())
 
 	// membagi deck
-	bagian1, bagian2 := BagiDek(dek)
+	bagian1, bagian2 := bagiDek(dek)
 	fmt.Printf("ini bagian 1\n")
 	bagian1.Cetak()
 	fmt.Printf("ini bagian 2\n")
