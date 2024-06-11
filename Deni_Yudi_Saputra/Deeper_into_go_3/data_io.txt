@@ -1,0 +1,1 @@
+ini adalah contoh data yang disimpan ke file menggunkan ioutils
