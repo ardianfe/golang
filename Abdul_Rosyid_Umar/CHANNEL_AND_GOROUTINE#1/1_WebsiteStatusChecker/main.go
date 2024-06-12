@@ -5,6 +5,8 @@ import (
 	"net/http"
 )
 
+// Website Status Checker adalah program yang memeriksa status beberapa website (apakah mereka up atau down).
+
 // fungsi untuk website checker
 func checkWebsite(url string) {
 	resp, err := http.Get(url)
@@ -12,7 +14,6 @@ func checkWebsite(url string) {
 		fmt.Printf("%s might be down!\n", url)
 		return
 	}
-	defer resp.Body.Close()
 
 	if resp.StatusCode == 200 {
 		fmt.Printf("%s is up and running!\n", url)
